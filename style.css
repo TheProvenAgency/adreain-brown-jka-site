@@ -18,10 +18,10 @@ html{scroll-behavior:smooth}
 body{
   margin:0;
   background:
-    linear-gradient(180deg, rgba(10,15,12,.90), rgba(10,15,12,.96) 45%, var(--bg) 80%),
-    radial-gradient(1100px 500px at 85% -10%, rgba(22,163,74,.22), transparent 60%),
-    radial-gradient(900px 500px at -10% 10%, rgba(212,175,55,.10), transparent 55%),
-    url("site-bg.jpg") center 18% / cover no-repeat fixed,
+    linear-gradient(180deg, rgba(10,15,12,.42), rgba(10,15,12,.62) 40%, rgba(10,15,12,.88) 65%, var(--bg) 92%),
+    radial-gradient(1100px 500px at 85% -10%, rgba(22,163,74,.18), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(212,175,55,.08), transparent 55%),
+    url("site-bg.jpg") center 20% / cover no-repeat fixed,
     var(--bg);
   color:var(--ink);
   font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
