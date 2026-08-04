@@ -24,7 +24,7 @@ Business owners and individuals who need fast, structured access to business fun
 - About (full founder story and timeline): /about.html
 - Services (all five offers in detail): /services.html
 - Articles (funding and credit frameworks): /articles.html
-- Contact / Apply: /contact.html
+- Apply (embedded on Home): /index.html#apply
 
 ## Contact / social
 - Instagram: https://www.instagram.com/amob_gocrazy/
