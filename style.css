@@ -87,9 +87,12 @@ header.site{
 .hero-actions{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
 .hero-photo{
   position:relative;border-radius:var(--radius);overflow:hidden;
-  border:1px solid var(--line);aspect-ratio:4/5;
-  background:linear-gradient(160deg,var(--panel),#0a130d);
+  aspect-ratio:4/5;
   display:flex;align-items:center;justify-content:center;
+}
+.hero-photo img{
+  -webkit-mask-image:radial-gradient(ellipse 78% 82% at 50% 42%, #000 45%, rgba(0,0,0,.55) 72%, transparent 100%);
+  mask-image:radial-gradient(ellipse 78% 82% at 50% 42%, #000 45%, rgba(0,0,0,.55) 72%, transparent 100%);
 }
 .hero-photo .tag{
   position:absolute;bottom:16px;left:16px;right:16px;z-index:2;
