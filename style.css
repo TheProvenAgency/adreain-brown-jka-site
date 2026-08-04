@@ -91,8 +91,8 @@ header.site{
   display:flex;align-items:center;justify-content:center;
 }
 .hero-photo img{
-  -webkit-mask-image:radial-gradient(ellipse 78% 82% at 50% 42%, #000 45%, rgba(0,0,0,.55) 72%, transparent 100%);
-  mask-image:radial-gradient(ellipse 78% 82% at 50% 42%, #000 45%, rgba(0,0,0,.55) 72%, transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 74% at 50% 40%, #000 30%, rgba(0,0,0,.5) 58%, transparent 92%);
+  mask-image:radial-gradient(ellipse 70% 74% at 50% 40%, #000 30%, rgba(0,0,0,.5) 58%, transparent 92%);
 }
 .hero-photo .tag{
   position:absolute;bottom:16px;left:16px;right:16px;z-index:2;
