@@ -145,11 +145,11 @@ section{padding:70px 0}
 .grid.cols-3{grid-template-columns:repeat(3,1fr)}
 .grid.cols-2{grid-template-columns:repeat(2,1fr)}
 .card{
-  background:rgba(18,32,26,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  background:rgba(18,32,26,.55);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
   border:1px solid var(--line);border-radius:var(--radius);
   padding:26px;transition:border-color .25s,transform .15s,background .25s,backdrop-filter .25s;
 }
-.card:hover{border-color:rgba(212,175,55,.55);background:rgba(18,32,26,.22);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+.card:hover{border-color:rgba(212,175,55,.5);background:rgba(18,32,26,.08);backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px)}
 .card .icon{
   width:42px;height:42px;border-radius:10px;background:rgba(22,163,74,.18);
   border:1px solid var(--green);color:var(--gold-2);
@@ -161,12 +161,12 @@ section{padding:70px 0}
 
 /* article cards */
 .article-card{
-  background:rgba(18,32,26,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  background:rgba(18,32,26,.55);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
   border:1px solid var(--line);border-radius:var(--radius);
   padding:22px;display:flex;flex-direction:column;gap:10px;
   transition:border-color .25s,background .25s,backdrop-filter .25s;
 }
-.article-card:hover{border-color:rgba(212,175,55,.55);background:rgba(18,32,26,.22);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+.article-card:hover{border-color:rgba(212,175,55,.5);background:rgba(18,32,26,.08);backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px)}
 .article-card .cat{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-2);font-weight:700}
 .article-card h3{font-size:20px;margin-bottom:2px}
 .article-card p{font-size:14px;margin-bottom:6px}
@@ -186,13 +186,25 @@ section{padding:70px 0}
 .featured .body{padding:34px}
 
 /* proof / testimonials */
-.proof{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof{
+  background:rgba(15,26,19,.65);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  transition:background .3s,backdrop-filter .3s;
+}
+.proof:hover{background:rgba(15,26,19,.18);backdrop-filter:blur(1px)}
 .quote{
-  background:rgba(18,32,26,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  background:rgba(18,32,26,.55);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
   border:1px solid var(--line);border-radius:var(--radius);
   padding:24px;font-size:15px;transition:border-color .25s,background .25s,backdrop-filter .25s;
 }
-.quote:hover{border-color:rgba(212,175,55,.55);background:rgba(18,32,26,.22);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+.quote:hover{border-color:rgba(212,175,55,.5);background:rgba(18,32,26,.08);backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px)}
+
+/* melt band — solid full-width sections that should dissolve into the background */
+.melt-band{
+  background:rgba(15,26,19,.68);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  transition:background .3s,backdrop-filter .3s;
+}
+.melt-band:hover{background:rgba(15,26,19,.14);backdrop-filter:blur(1px);-webkit-backdrop-filter:blur(1px)}
 .quote .who{margin-top:14px;font-size:13px;color:var(--gold-2);font-weight:700}
 
 /* numbers list (about page long-form proof) */
@@ -213,8 +225,8 @@ section{padding:70px 0}
 .faq-item p{font-size:14.5px;margin:0}
 
 /* form */
-.formcard{background:rgba(18,32,26,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:var(--radius);padding:34px;transition:background .3s,backdrop-filter .3s}
-.formcard:hover{background:rgba(18,32,26,.42);backdrop-filter:blur(3px)}
+.formcard{background:rgba(18,32,26,.6);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);border:1px solid var(--line);border-radius:var(--radius);padding:34px;transition:background .3s,backdrop-filter .3s}
+.formcard:hover{background:rgba(18,32,26,.15);backdrop-filter:blur(1px);-webkit-backdrop-filter:blur(1px)}
 .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
 .field{display:flex;flex-direction:column;gap:6px}
 .field.full{grid-column:1/-1}
