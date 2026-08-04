@@ -50,10 +50,9 @@ header.site{
 .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max);margin:0 auto}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px}
 .brand .mark{
-  width:34px;height:34px;border-radius:8px;
-  background:linear-gradient(135deg,var(--green),var(--green-dark));
-  display:flex;align-items:center;justify-content:center;
-  font-family:"Bebas Neue",Impact,sans-serif;color:var(--gold-2);font-size:18px;border:1px solid var(--gold);
+  width:34px;height:34px;border-radius:50%;
+  object-fit:cover;display:inline-block;vertical-align:middle;
+  border:1px solid var(--gold);
 }
 .navlinks{display:flex;gap:28px;font-size:14px;font-weight:600}
 .navlinks a{color:var(--muted);transition:color .15s}
