@@ -23,4 +23,19 @@ document.addEventListener('DOMContentLoaded', function () {
       if (btn) { btn.textContent = 'Application Received — We\'ll Text You Shortly'; btn.disabled = true; }
     });
   }
+
+  // Mouse-follow spotlight glow (kayvon.com-style)
+  var root = document.documentElement;
+  var raf = null;
+  function setGlow(x, y) {
+    root.style.setProperty('--mx', x + 'px');
+    root.style.setProperty('--my', y + 'px');
+  }
+  window.addEventListener('pointermove', function (e) {
+    if (raf) return;
+    raf = requestAnimationFrame(function () {
+      setGlow(e.clientX, e.clientY);
+      raf = null;
+    });
+  }, { passive: true });
 });
