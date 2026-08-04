@@ -92,10 +92,11 @@ header.site{
   display:flex;align-items:center;justify-content:center;
 }
 .hero-photo .tag{
-  position:absolute;bottom:16px;left:16px;right:16px;
+  position:absolute;bottom:16px;left:16px;right:16px;z-index:2;
   background:rgba(10,15,12,.75);border:1px solid var(--line);
   border-radius:10px;padding:10px 14px;font-size:12px;color:var(--gold-2);
 }
+a.hero-photo-tag:hover,.hero-photo .tag:hover{background:rgba(10,15,12,.92);border-color:var(--gold)}
 
 /* stat bar */
 .statbar{border-bottom:1px solid var(--line);background:var(--bg-2)}
